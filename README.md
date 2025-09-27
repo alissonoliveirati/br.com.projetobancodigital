@@ -1,18 +1,42 @@
-## Getting Started
+# 🏦 Sistema Bancário em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📌 Sobre o projeto
+Este projeto foi desenvolvido em Java com fins de estudo, aplicando conceitos de:
+ - Estruturas de controle e repetição
+ - Programação Orientada a Objetos (POO)
+ - Boas práticas de versionamento (Git e Conventional Commits)
+A aplicação simula operações básicas de uma conta bancária, com menu interativo no console.
 
-## Folder Structure
+## ⚙️ Funcionalidades
+ - Consultar saldo
+ - Consultar limite do cheque especial
+ - Depositar dinheiro
+ - Sacar dinheiro
+ - Pagar boleto
+ - Verificar se a conta está utilizando cheque especial
 
-The workspace contains two folders by default, where:
+## 📝 Regras de negócio
+- O limite de cheque especial é definido no momento da criação da conta, de acordo com o valor do depósito inicial:
+ - Até R$ 500,00 → limite fixo de R$ 50,00
+ - Acima de R$ 500,00 → limite de 50% do valor depositado
+- Caso o cheque especial seja utilizado, será cobrada uma taxa de 20% sobre o valor utilizado, assim que houver saldo disponível para cobrir.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 📌 Roadmap
+- [x] Criar menu interativo no console
+- [x] Implementar criação de conta com depósito inicial
+- [x] Definir limite de cheque especial conforme regras de negócio
+- [ ] Implementar depósitos
+- [ ] Implementar saques
+- [ ] Implementar pagamento de contas
+- [ ] Aplicar taxa automática sobre uso do cheque especial
+- [ ] Melhorar mensagens exibidas ao usuário
+- [ ] Criar testes unitários básicos
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 📖 Aprendizados
+ - Implementação de menus interativos em Java
+ - Uso de classes e métodos para organizar responsabilidades
+ - Aplicação de regras de negócio em lógica de programação
+ - Primeiros passos com Git e boas práticas de commits
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 👨‍💻 Autor
+Projeto desenvolvido por Alisson Oliveira como parte do aprendizado em Java e boas práticas de desenvolvimento.
