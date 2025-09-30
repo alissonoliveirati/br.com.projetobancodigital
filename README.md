@@ -1,7 +1,7 @@
 # 🏦 Sistema Bancário em Java
 
 ## 📌 Sobre o projeto
-Este projeto foi desenvolvido em Java com fins de estudo, aplicando conceitos de:
+Este projeto está sendo desenvolvido em Java com fins de estudo, aplicando conceitos de:
  - Estruturas de controle e repetição
  - Programação Orientada a Objetos (POO)
  - Boas práticas de versionamento (Git e Conventional Commits)
@@ -17,8 +17,8 @@ A aplicação simula operações básicas de uma conta bancária, com menu inter
 
 ## 📝 Regras de negócio
 - O limite de cheque especial é definido no momento da criação da conta, de acordo com o valor do depósito inicial:
- - Até R$ 500,00 → limite fixo de R$ 50,00
- - Acima de R$ 500,00 → limite de 50% do valor depositado
+    - Até R$ 500,00 → limite fixo de R$ 50,00
+    - Acima de R$ 500,00 → limite de 50% do valor depositado
 - Caso o cheque especial seja utilizado, será cobrada uma taxa de 20% sobre o valor utilizado, assim que houver saldo disponível para cobrir.
 
 ## 📌 Roadmap
