@@ -44,17 +44,13 @@ public class BancoApp {
                     conta.consultarChequeEspecial();
                     break;
                 case 3:
-                    /* 
                     System.out.println("Digite o valor a ser depositado:");
                     double valorDeposito = scanner.nextDouble();
                     scanner.nextLine(); // Consumir a quebra de linha
                     conta.depositar(valorDeposito);
                     System.out.println("Depósito realizado com sucesso!");
-                    */  
-                    
                     break;
                 case 4:
-                    /*
                     System.out.println("Digite o valor a ser sacado:");
                     double valorSaque = scanner.nextDouble();
                     scanner.nextLine(); // Consumir a quebra de linha
@@ -63,19 +59,23 @@ public class BancoApp {
                     } else {
                         System.out.println("Saldo insuficiente para saque.");
                     }
-                    */
                     break;
                 case 5:
-                    /*
                     System.out.println("Digite o valor da conta a ser paga:");
                     double valorConta = scanner.nextDouble();
-                    scanner.nextLine(); // Consumir a quebra de linha
+                    scanner.nextLine();
+                    System.out.println("Digite a descrição da conta:");
+                    String descricaoConta = scanner.nextLine();
                     if (conta.pagarConta(valorConta)) {
                         System.out.println("Pagamento realizado com sucesso!");
+                        System.out.printf("Descrição da conta: %s%n", descricaoConta);
+                        System.out.println("Valor pago: R$ " + valorConta);
+                        System.out.printf("Nº da autenticação: %d%n", (int)(Math.random() * 1000000));
+                        System.out.println("Obrigado por pagar sua conta em dia!");
+                        conta.consultarSaldo();
                     } else {
                         System.out.println("Saldo insuficiente para pagamento.");
                     }
-                    */
                     break;
                 case 6:
                     continuar = false;
