@@ -25,9 +25,9 @@ A aplicação simula operações básicas de uma conta bancária, com menu inter
 - [x] Criar menu interativo no console
 - [x] Implementar criação de conta com depósito inicial
 - [x] Definir limite de cheque especial conforme regras de negócio
-- [ ] Implementar depósitos
-- [ ] Implementar saques
-- [ ] Implementar pagamento de contas
+- [x] Implementar depósitos
+- [x] Implementar saques
+- [x] Implementar pagamento de contas
 - [ ] Aplicar taxa automática sobre uso do cheque especial
 - [ ] Melhorar mensagens exibidas ao usuário
 - [ ] Criar testes unitários básicos
